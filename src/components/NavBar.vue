@@ -3,7 +3,7 @@
     <div :class="{'under-body':toggled}" @click="toggled = !toggled"></div>
 
     <section class="bg-dark">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" style="position: relative !important;">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" @click="toggled = !toggled">
             <span class="navbar-toggler-icon"></span>
@@ -11,32 +11,28 @@
           <a class="navbar-brand" href="#">Navbar</a>
 
           <a href="#" class="navbar-toggle collapsed"></a>
-          <transition name="slide-fade">
-            <div class="collapse navbar-collapse" id="navbarCollapse" :class="{'side-bar':toggled, 'col-5':toggled}" v-if="toggled">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </transition>
+        <side-bar></side-bar>
         </nav>
     </section>
+    <aside>
+      <transition name="slide-fade">
+        <side-bar v-show="toggled" class="side-bar col-5"></side-bar>
+      </transition>
+    </aside>
   </div>
 </template>
 
 <script>
+  import SideBar from './SideBar.vue'
+
   export default {
     data:function(){
       return {
         toggled: false
       }
+    },
+    components: {
+      SideBar
     }
   }
 
