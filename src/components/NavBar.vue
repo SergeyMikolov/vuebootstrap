@@ -16,7 +16,7 @@
     </section>
     <aside>
       <transition name="slide-fade">
-        <side-bar v-show="toggled" class="side-bar col-5"></side-bar>
+        <side-bar v-show="toggled" class="side-bar col-7"></side-bar>
       </transition>
     </aside>
   </div>
@@ -41,5 +41,4 @@
 <style>
   @import "../assets/style/main.css";
   @import "../assets/style/nav-bar.css";
-  @import "../assets/style/side-bar.css";
 </style>

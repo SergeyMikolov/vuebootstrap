@@ -6,3 +6,12 @@
 .avatar {
   height: 32px;
 }
+
+.navbar .dropdown-toggle::after {
+  color: cornsilk;
+}
+
+.user-menu span {
+  color: aliceblue;
+  text-decoration: none;
+}

@@ -14,5 +14,7 @@
 </script>
 
 <style>
-
+  .col-xs-10 {
+    padding: 5%;
+  }
 </style>
