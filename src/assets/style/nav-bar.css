@@ -3,35 +3,6 @@
   padding-right: 10%;
 }
 
-.side-bar {
-  position: absolute;
-  display: list-item;
-  top: 0;
-  left: 0;
-  /*width: 50%;*/
-  height:100vh;
-  background-color: black;
-  padding: 10px;
-  z-index: 2;
-}
-
-.under-body {
-  position: absolute;
-  background-color: grey;
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-.slide-fade-enter-active {
-  transition: all .5s ease;
-}
-
-.slide-fade-leave-active {
-  transition: all .5s ease;
-}
-
-.slide-fade-enter, .slide-fade-leave-to {
-  transform: translateX(-100%);
+.avatar {
+  height: 30px;
 }
