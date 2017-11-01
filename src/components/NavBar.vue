@@ -39,5 +39,7 @@
 </script>
 
 <style>
+  @import "../assets/style/main.css";
   @import "../assets/style/nav-bar.css";
+  @import "../assets/style/side-bar.css";
 </style>

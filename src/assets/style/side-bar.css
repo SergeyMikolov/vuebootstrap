@@ -1,0 +1,51 @@
+.side-bar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  /*width: 50%;*/
+  height:100vh;
+  background-color: #212529;
+  z-index: 2;
+  border-right: 2px solid blanchedalmond;
+  padding: 5%;
+}
+
+.side-bar a {
+  text-decoration: none;
+  color: azure;
+}
+
+.under-body {
+  position: absolute;
+  background-color: grey;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .5s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(-100%);
+}
+
+.side-bar .avatar {
+  height: auto;
+  text-align: center;
+}
+
+.side-bar > .user-menu {order: 1;}
+.side-bar > .navbar-nav {order: 2;}
+.side-bar > .navbar-nav {order: 2;}
+.user-name {
+
+}
