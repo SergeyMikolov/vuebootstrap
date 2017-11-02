@@ -1,14 +1,11 @@
 <template>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <router-link to="/blog" class="nav-link">Blog</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <router-link to="/user" class="nav-link">User</router-link>
               </li>
             </ul>
 
@@ -36,9 +33,11 @@
       }
     }
   }
-
 </script>
 
 <style>
   @import "../assets/style/side-bar.css";
+  .router-link-active {
+    color: red !important;
+  }
 </style>

@@ -1,17 +1,17 @@
 <template>
   <div class="nav-bar">
-    <div :class="{'under-body':toggled}" @click="toggled = !toggled"></div>
+    <div :class="{'under-body':toggled}" @click="sideBar"></div>
 
     <section class="bg-dark">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" @click="toggled = !toggled">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" @click="sideBar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Navbar</a>
+          <router-link class="navbar-brand" to="/">Navbar</router-link>
 
           <a href="#" class="navbar-toggle collapsed"></a>
-        <side-bar></side-bar>
+          <side-bar></side-bar>
         </nav>
     </section>
     <aside>
@@ -33,9 +33,13 @@
     },
     components: {
       SideBar
+    },
+    methods: {
+      sideBar: function () {
+         this.toggled = !this.toggled
+      }
     }
   }
-
 </script>
 
 <style>
