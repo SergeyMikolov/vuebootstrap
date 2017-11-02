@@ -14,7 +14,7 @@
           <side-bar></side-bar>
         </nav>
     </section>
-    <aside>
+    <aside @click="sideBar">
       <transition name="slide-fade">
         <side-bar v-show="toggled" class="side-bar col-7"></side-bar>
       </transition>

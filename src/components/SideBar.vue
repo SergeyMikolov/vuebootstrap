@@ -2,7 +2,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <router-link to="/blog" class="nav-link">Blog</router-link>
+                <router-link to="/blog" class="nav-link" @click="toggled = false">Blog</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/user" class="nav-link">User</router-link>
