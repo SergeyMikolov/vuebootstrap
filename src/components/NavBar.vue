@@ -46,10 +46,4 @@
 <style>
   @import "../assets/style/main.css";
   @import "../assets/style/nav-bar.css";
-  .swipe-menu {
-    position: absolute;
-    width: 15%;
-    height: 100%;
-    border: 1px solid black;
-  }
 </style>
