@@ -13,19 +13,6 @@
     data:function(){
       return {
       }
-    },
-    methods: {
-      test1 : function () {
-        // GET /someUrl
-        this.$http.get('http://192.168.11.166:133/public/get-all-countries-with-verticals').then(response => {
-
-          // get body data
-          console.log(response.body);
-
-        }, response => {
-          // error callback
-        });
-      }
     }
   }
 </script>
