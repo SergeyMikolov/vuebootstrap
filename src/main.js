@@ -16,6 +16,10 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios);
 Vue.axios.defaults.baseURL = 'http://192.168.11.166:133/public';
 
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next()
+});
 Vue.router = router;
 
 // Vue Auth

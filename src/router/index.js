@@ -8,26 +8,39 @@ import notFound from '@/pages/notFound'
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'index',
-      component: index
+      component: index,
+      meta: {
+        title: 'index'
+      }
     },
     {
       path: '/blog',
       name: 'blog',
-      component: blog
+      component: blog,
+      meta: {
+        title: 'blog'
+      }
     },
     {
       path: '/user',
       name: 'user',
-      component: user
+      component: user,
+      meta: {
+        title: 'user'
+      }
     },
     {
       path: '/*',
       name: 'notFound',
-      component: notFound
+      component: notFound,
+      meta: {
+        title: '404'
+      }
     },
   ]
 })
