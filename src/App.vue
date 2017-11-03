@@ -1,7 +1,13 @@
 <template>
   <div id="app">
-    <nav-bar></nav-bar>
-    <router-view></router-view>
+    <div  v-if="$auth.ready()">
+      <nav-bar></nav-bar>
+      <router-view></router-view>
+    </div>
+    <div v-if="!$auth.ready()">
+      <!--todo-->
+      Loading ...
+    </div>
   </div>
 </template>
 
